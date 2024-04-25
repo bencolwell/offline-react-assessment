@@ -11,7 +11,7 @@ const NameInput = ({ name, isLoading, data, handleNameChanged }) => {
                 <p>this name has already been taken</p>
             )}
         </>
-    )
+    );
 };
 
 export default NameInput;

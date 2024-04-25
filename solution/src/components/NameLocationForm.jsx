@@ -30,7 +30,7 @@ const NameLocationForm = () => {
     } = useSWR(
         name.length > 0 ? name : null,
         isNameValid
-    )
+    );
 
     const handleNameChanged = (value) => {
         setName(value);
@@ -38,18 +38,18 @@ const NameLocationForm = () => {
 
     const handleLocationChanged = (value) => {
         setLocation(value);
-    }
+    };
 
     const handleClearClicked = () => {
         setListItems([]);
-    }
+    };
 
     const handleAddclicked = () => {
         setListItems([
             ...listItems,
             {name: name, location: location}
         ]);
-    }
+    };
 
     const isAddEnabled = !isLoading && data && location !== "";
 

@@ -8,7 +8,7 @@ const LocationSelect = ({ locations, handleLocationChanged }) => {
                 ))}
             </select>
         </label>
-    )
+    );
 };
 
 export default LocationSelect;
